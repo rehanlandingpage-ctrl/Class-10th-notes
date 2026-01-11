@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDYshot Community - Free Sample Papers</title>
+    
+    <!-- Meta Pixel Code Placeholder -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); // Replace with your actual Pixel ID
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .group-name {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 40px 25px;
+            text-align: center;
+            background: white;
+        }
+        
+        .hero h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #1e3c72;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.7);
+            }
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            padding: 40px 25px;
+            background: #f8f9fa;
+        }
+        
+        .reviews h3 {
+            text-align: center;
+            font-size: 22px;
+            color: #1e3c72;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .review-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .student-name {
+            font-weight: 600;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .star {
+            color: #ffc107;
+            font-size: 18px;
+        }
+        
+        .rating-number {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 16px;
+        }
+        
+        .review-text {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1e3c72;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231a1a3e'/%3E%3Cstop offset='100%25' style='stop-color:%230d1b3e'/%3E%3C/linearGradient%3E%3ClinearGradient id='book' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%234dd4ff'/%3E%3Cstop offset='100%25' style='stop-color:%236b8cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='800' fill='url(%23bg)'/%3E%3Cg transform='translate(400,240)'%3E%3Cpath d='M-80,0 L-80,120 L0,140 L80,120 L80,0 L0,20 Z' fill='none' stroke='url(%23book)' stroke-width='12' stroke-linejoin='round'/%3E%3Cpath d='M-80,0 L0,20 L80,0' fill='none' stroke='url(%23book)' stroke-width='12' stroke-linecap='round'/%3E%3Cpath d='M0,20 L0,140' fill='none' stroke='url(%23book)' stroke-width='12' stroke-linecap='round'/%3E%3C/g%3E%3Ctext x='400' y='480' font-family='Arial, sans-serif' font-size='80' font-weight='bold' fill='white' text-anchor='middle'%3EMODULAR%3C/text%3E%3C/svg%3E" alt="Modular Logo">
+            </div>
+            <div class="group-name">STUDYshot-COMMUNITY (free)</div>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>5 Sample Papers<br>50 Repeated Questions<br>& Exam Hack</h1>
+            <h2>Get Topper-Level VVI Questions & Smart Notes</h2>
+            
+            <a href="https://chat.whatsapp.com/HLUBO1twbSMGHwWa8gVjqt" 
+               class="cta-button" 
+               onclick="fbq('track', 'Lead');">
+                📱 Join WhatsApp Group
+            </a>
+        </div>
+        
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h3>Recent Reviews ⭐</h3>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="student-name">Priya Sharma</span>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="rating-number">4.3</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Amazing sample papers! Got 5 repeated questions in my exam. Highly recommend!"
+                </p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="student-name">Rahul Kumar</span>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="rating-number">4.7</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Smart notes are a game changer. Scored 92% following these materials!"
+                </p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="student-name">Anjali Verma</span>
+                    <div class="rating">
+                        <span class="star">⭐</span>
+                        <span class="rating-number">4.9</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Best free study group! The exam hacks really work. Thank you so much!"
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            © 2025 STUDYshot Community | All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>
